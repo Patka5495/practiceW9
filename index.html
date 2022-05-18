@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/01.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="igo">아이고</div>
+    <p id="num">0</p>
+    <button id="prev_btn">이전</button>
+    <button id="next_btn">다음</button>
+</body>
+<script>
+    let myNum = 1;
+    const maxPic = 4;
+    let Igo = document.getElementById("igo");
+    function numprint(){
+        document.getElementById("num").innerText = myNum;
+    }
+    numprint();
+
+    document.getElementById("prev_btn").onclick = function(){
+        console.log("이전버튼")
+        if(myNum == 1){
+            myNum = maxPic;
+        }else{
+            myNum--;
+        }
+        if(myNum == 1){
+            Igo.style.fontSize = "20px";
+            Igo.innerText ="아이고";
+        }else if(myNum == 2){
+            Igo.style.fontSize = "40px";
+            Igo.innerText ="대체";
+        }else if(myNum == 3){
+            Igo.style.fontSize = "60px";
+            Igo.innerText ="왜 그랬을까";
+        }else{
+            Igo.style.fontSize = "150px";
+            Igo.innerText ="아ㅏㅏㅏ";
+        }
+        numprint(); 
+    }
+    document.getElementById("next_btn").onclick = function(){
+        console.log("다음버튼")
+        if(myNum == maxPic){
+            myNum = 1;
+        }else{
+            myNum++;
+        }
+        if(myNum == 1){
+            Igo.style.fontSize = "20px";
+            Igo.innerText ="아이고";
+        }else if(myNum == 2){
+            Igo.style.fontSize = "40px";
+            Igo.innerText ="대체";
+        }else if(myNum == 3){
+            Igo.style.fontSize = "60px";
+            Igo.innerText ="왜 그랬을까";
+        }else{
+            Igo.style.fontSize = "150px";
+            Igo.innerText ="아ㅏㅏㅏ";
+        }
+        numprint();
+    }
+</script>
+</html>
