@@ -1,0 +1,6 @@
+*{margin: 0; padding: 0;}
+#picSet{border: 5px solid red; width: 1440px; height: 540px; position: relative; overflow: hidden; margin: 0 auto;}
+#picSet img{border: 2px solid green; position: absolute; top: 0; left: 0; transition: left 0.2s ease;}
+/* #picSet #pic0{left: calc(1440px*0);}
+#picSet #pic1{left: calc(1440px*1);}
+#picSet #pic2{left: calc(1440px*2);} */
