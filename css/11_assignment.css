@@ -1,13 +1,14 @@
 *{margin: 0 auto; padding: 0; text-align: center; box-sizing: border-box;}
-#section1 #imgSet{width: 720px; height: 540px; position: relative; margin: 0 auto;}
+#section1 h3{ font-size: 10px; font-style: italic; color: rgba(0, 0, 0, 0.193);}
+#section1 #imgSet{width: 1001px; height: 601px; position: relative; margin: 0 auto;}
 #section1 #imgSet #prev_btn{position: absolute;  margin-left: -50px; top: 50%; left: 0; }
 #section1 #imgSet #next_btn{position: absolute; margin-right: -50px; top: 50%; right: 0;}
 #section1 #imgSet button {width: 100px; height: 100px; margin-top: -50px; background-color: black; color: #fff; border-radius: 50%; cursor: pointer; transition: 0.5s ease;}
-#section1 #imgSet button:hover{background-color: red;}
+#section1 #imgSet button:hover{background-color: rgb(255, 255, 255); color: #000;}
 
-#section1 #imgSet #picSet{border: 5px solid red; width: 1440px; height: 540px; position: relative; overflow: hidden; margin: 0 auto;}
-#section1 #imgSet #picSet img{border: 2px solid green; position: absolute; top: 0; left: 0; transition: left 0.5s ease;}
-#section1 #imgSet #picSet dl{position: absolute; z-index: 3; bottom: -90px; left: 0; background-color: rgba(0,0,0,0.5); color: #fff; width: 100%; padding: 20px; }
+#section1 #imgSet #picSet{ width: 1001px; height: 601px; position: relative; overflow: hidden; margin: 0 auto;}
+#section1 #imgSet #picSet img{ position: absolute; top: 0; left: 0; transition: left 0.5s ease;}
+#section1 #imgSet #picSet dl{position: absolute; z-index: 3; bottom: -90px; left: 0; background-color: rgba(0, 0, 0, 0.198); color: rgb(0, 0, 0); width: 100%; padding: 20px; }
 #section1 #imgSet #picSet dl.active{ animation: textMotionIn forwards ease .7s;}
 #section1 #imgSet #picSet dl.inactive{animation: textMotionOut forwards ease-in-out .7s;}
 
@@ -24,10 +25,3 @@
 #section1 #dot_list li{margin: 0 10px; background-color: black; color: #fff; display: inline-block; width: 25px; height: 25px; border: 1px solid #000; border-radius: 20px;}
 #section1 #dot_list li:hover{ background-color: #fff; color: #000; transition: all 0.5s ease; cursor: pointer;}
 #section1 #dot_list li.active{background-color: red;}
-
-
-
-/* button{ } */
-/* #picSet #pic0{left: calc(1440px*0);}
-#picSet #pic1{left: calc(1440px*1);}
-#picSet #pic2{left: calc(1440px*2);} */

@@ -1,7 +1,7 @@
 // 초기 변수 선언
-let picWidth = 1440;
+let picWidth = 1001;
 let moveNum = 0;
-const totalNum = 3;
+const totalNum = 7;
 
 // ul 동적 생성
 let dotList = document.createElement("ul");
@@ -9,7 +9,7 @@ dotList.setAttribute("id", "dot_list")
 document.getElementById("section1").appendChild(dotList);
 
 // li 동적 생성
-for(i=0; i<3; i++){
+for(i=0; i<7; i++){
     var li = document.createElement("li");
     li.setAttribute("id", "dot"+i)
     document.getElementById("dot_list").appendChild(li);
@@ -23,7 +23,7 @@ for(i=0; i<3; i++){
 
 
 // 이미지 위치 셋팅
-for(var i=0; i<3; i++){
+for(var i=0; i<7; i++){
     document.getElementById("pic"+i).style.left = (picWidth*i) + "px";
 }
 document.getElementById("temp").innerText = "Page : " + moveNum;
@@ -37,7 +37,7 @@ var aniFuction = function(){
     document.getElementById("dot"+moveNum).classList.remove("active"); 
 }
 var imgMove = function(){
-    for(var i=0; i<3; i++){
+    for(var i=0; i<7; i++){
         document.getElementById("pic"+i).style.left = (picWidth*(i-moveNum)) + "px";
     }
     document.getElementById("temp").innerText = "Page : " + moveNum;
@@ -65,7 +65,7 @@ document.getElementById("prev_btn").onclick = function(){
     if(moveNum > 0){
         moveNum --;
     }else{
-        moveNum = 2;    
+        moveNum = 6;    
     }
     imgMove();
 }
